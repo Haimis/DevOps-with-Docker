@@ -1,0 +1,8 @@
+Script started on Wed Dec 16 11:55:11 2020
+[1m[7m%[27m[1m[0m                                                                                                                                        ]7;file://Mikkos-Air.home/Users/haimis/docker[0m[27m[24m[Jhaimis@Mikkos-Air docker % [K[?2004hddocker ps -as[?2004l
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+[1m[7m%[27m[1m[0m                                                                                                                                        ]7;file://Mikkos-Air.home/Users/haimis/docker[0m[27m[24m[Jhaimis@Mikkos-Air docker % [K[?2004hddocker images[?2004l
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+[1m[7m%[27m[1m[0m                                                                                                                                        ]7;file://Mikkos-Air.home/Users/haimis/docker[0m[27m[24m[Jhaimis@Mikkos-Air docker % [K[?2004heexit[?2004l
+
+Script done on Wed Dec 16 11:55:26 2020

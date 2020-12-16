@@ -1,0 +1,8 @@
+Script started on Wed Dec 16 11:49:14 2020
+command: docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                     PORTS     NAMES
+7b1d6341258b   nginx     "/docker-entrypoint.…"   7 minutes ago   Exited (0) 7 minutes ago             angry_bouman
+d20e337e344a   nginx     "/docker-entrypoint.…"   7 minutes ago   Exited (0) 7 minutes ago             agitated_galileo
+9e2b1e8d86d4   nginx     "/docker-entrypoint.…"   7 minutes ago   Up 7 minutes               80/tcp    suspicious_taussig
+
+Script done on Wed Dec 16 11:49:15 2020
