@@ -1,0 +1,9 @@
+Script started on Sun Dec 20 23:22:30 2020
+haimis@Mikkos-Air Part1 % docker run -it devopsdockeruh/pull_exercise
+Give me the password: basics
+You found the correct password. Secret message is:
+"This is the secret message"
+
+haimis@Mikkos-Air Part1 % exit
+
+Script done on Sun Dec 20 23:22:42 2020
