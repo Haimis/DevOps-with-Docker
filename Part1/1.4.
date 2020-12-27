@@ -1,0 +1,25 @@
+Script started on Mon Dec 21 01:05:02 2020
+haimis@Mikkos-Air: /Users/haimis/Documents/docker/Part1 git:(master) ✗
+➜   docker run -d -it --name ex devopsdockeruh/exec_bash_exercise
+97198b0e8147c6cfd11058d9da0b0a200e6b8edeade1af6bb8ce2cc8b8189579
+haimis@Mikkos-Air: /Users/haimis/Documents/docker/Part1 git:(master) ✗
+➜   docker exec -it ex cat logs.txt
+Sun, 20 Dec 2020 23:05:28 GMT
+Sun, 20 Dec 2020 23:05:31 GMT
+Sun, 20 Dec 2020 23:05:34 GMT
+Sun, 20 Dec 2020 23:05:37 GMT
+Secret message is:
+"Docker is easy"
+Sun, 20 Dec 2020 23:05:43 GMT
+Sun, 20 Dec 2020 23:05:46 GMT
+Sun, 20 Dec 2020 23:05:49 GMT
+Sun, 20 Dec 2020 23:05:52 GMT
+Secret message is:
+"Docker is easy"
+Sun, 20 Dec 2020 23:05:58 GMT
+Sun, 20 Dec 2020 23:06:01 GMT
+Sun, 20 Dec 2020 23:06:04 GMT
+haimis@Mikkos-Air: /Users/haimis/Documents/docker/Part1 git:(master) ✗
+➜   exit
+
+Script done on Mon Dec 21 01:06:23 2020
