@@ -1,0 +1,6 @@
+docker run -it ubuntu:16.04 bash
+apt update
+apt get curl
+Y
+sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+exit
