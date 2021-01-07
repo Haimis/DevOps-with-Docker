@@ -1,0 +1,1 @@
+docker container run -d -v $(pwd)/logs.txt:/dist/logs.txt -p 8000:8000 -it  myimage sh -c 'npm start'
