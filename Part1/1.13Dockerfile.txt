@@ -1,0 +1,10 @@
+FROM openjdk:8u252-jdk-slim-buster
+
+
+WORKDIR /dir
+
+RUN apt-get update && apt-get install -y git
+RUN git clone https://github.com/docker-hy/spring-example-project
+RUN cd spring-example-project/ && ./mvnw package
+
+CMD ["/bin/bash"]

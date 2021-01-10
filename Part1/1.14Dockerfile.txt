@@ -1,0 +1,18 @@
+FROM ruby:2.6.0
+
+WORKDIR /dir
+
+RUN apt-get update && apt-get install -y git
+RUN git clone https://github.com/docker-hy/rails-example-project
+
+RUN apt-get install -y curl
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
+
+RUN apt install -y nodejs
+RUN node -v && npm -v
+
+RUN gem install bundler && gem install rails
+
+RUN cd rails-example-project && bundle install && rails db:migrate
+
+CMD ["/bin/bash"]
