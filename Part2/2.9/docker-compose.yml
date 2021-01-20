@@ -1,0 +1,44 @@
+version: '3.5' 
+
+services:
+
+  nginx: 
+    image: nginx
+    volumes: 
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports: 
+      - 80:80
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=example
+    volumes:
+      - ./database:/var/lib/postgresql/data/
+
+  redis:
+    image: redis
+    restart: unless-stopped 
+    ports:
+    - 6379:6379
+
+  frontend: 
+    image: frontend
+    ports: 
+      - 5000:5000 
+
+  backend: 
+    image: backend
+    ports: 
+      - 8000:8000 
+    environment:
+      - REDIS=redis
+      - REDIS_PORT=6379
+      - DB_USERNAME=user
+      - DB_PASSWORD=example
+      - DB_HOST=db
+
+volumes:
+  database:
